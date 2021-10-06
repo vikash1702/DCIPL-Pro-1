@@ -1,0 +1,124 @@
+.form99 {
+  text-align: left;
+}
+
+/* a {
+  color: goldenrod;
+} */
+
+.area {
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+}
+.area ul li {
+  list-style: none;
+}
+.side-menu {
+  position: relative;
+  background: #275b85;
+  min-height: 30rem;
+  width: 300px;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: column;
+}
+.side-menu .brand-name {
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: goldenrod;
+}
+
+.side-menu li {
+  font-size: 24px;
+  padding: 17px 0px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.side-menu li a {
+  color: #ffff;
+  text-decoration: none;
+}
+.area li:hover {
+  background: rgb(97, 145, 184);
+  border-radius: 10px;
+  font-weight: 550;
+  margin-left: 5px;
+  transition: all ease-in 250ms;
+}
+.content1 {
+  margin-top: -760px;
+  margin-left: 300px;
+  min-height: 90vh;
+  display: flex;
+}
+.content1 .cards77 {
+  padding: 10px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-radius: 30px;
+}
+.content1 .cards77 .card00 {
+  width: 150px;
+  height: 100px;
+  background-color: rgb(35, 44, 75);
+  margin: 10px 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.16),
+    0 6px 20px 0 rgba(240, 229, 229, 0.19);
+}
+/* .box00 h1,
+h3 {
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 1px;
+  text-align: center;
+} */
+
+/* .area ul
+{
+	list-style: none;
+	line-height: -20px;
+	color: #fff;
+	position: absolute;
+	width: 570px;
+	height: 39px;
+	left: 786px;
+	top: 0px;
+}
+.area ul li{
+	display:inline-block;
+}
+.area ul li a{
+	text-decoration:inherit;
+	font-family:jost;
+	font-weight:bold;
+	font-size:20px;
+	padding:5px 20px;
+	color:#000;
+	} */
+.content {
+  top: 30px;
+  box-sizing: border-box;
+  line-height: 1.7;
+  font-family: Jost;
+
+  font-size: 23px;
+
+  text-align: center;
+
+  color: #ffff;
+}
+.area .content p {
+  text-align: left;
+  margin-top: 50px;
+  padding-right: 690px;
+}
