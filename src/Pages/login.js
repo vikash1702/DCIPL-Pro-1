@@ -63,9 +63,10 @@ function Login(Profile) {
             return Object.assign({}, prevState, {
               id: user.id,
               name: user.name,
+              mobile: user.mobile,
               email: user.email,
               IsSignIn: true,
-              IsonBoarding: true,
+              IsonBoarding: user.onboarded,
             });
           });
         } else {
