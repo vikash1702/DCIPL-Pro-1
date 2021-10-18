@@ -120,7 +120,6 @@ const Main = ({ Profile, setProfile }) => {
         <Route exact path="/cancel">
           <Cancel />
         </Route>
-
       </div>
     </Router>
   );

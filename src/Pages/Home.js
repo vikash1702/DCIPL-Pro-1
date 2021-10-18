@@ -139,37 +139,37 @@ const Home = () => {
   ];
 
   // Statistics
-  var project = setInterval(projectDone, 10);
-  var clients = setInterval(happyClients, 10);
-  var service = setInterval(service, 10);
+  // var project = setInterval(projectDone, 10);
+  // var clients = setInterval(happyClients, 10);
+  // var service = setInterval(service, 10);
 
-  let count1 = 1;
-  let count2 = 1;
-  let count3 = 1;
+  // let count1 = 1;
+  // let count2 = 1;
+  // let count3 = 1;
 
-  function projectDone() {
-    count1++;
-    document.querySelector("#number1").innerHTML = count1;
-    if (count1 == 500) {
-      clearInterval(project);
-    }
-  }
+  // function projectDone() {
+  //   count1++;
+  //   document.querySelector("#number1").innerHTML = count1;
+  //   if (count1 == 500) {
+  //     clearInterval(project);
+  //   }
+  // }
 
-  function happyClients() {
-    count2++;
-    document.querySelector("#number2").innerHTML = count2;
-    if (count2 == 89) {
-      clearInterval(clients);
-    }
-  }
+  // function happyClients() {
+  //   count2++;
+  //   document.querySelector("#number2").innerHTML = count2;
+  //   if (count2 == 89) {
+  //     clearInterval(clients);
+  //   }
+  // }
 
-  function service() {
-    count3++;
-    document.querySelector("#number3").innerHTML = count3;
-    if (count3 == 359) {
-      clearInterval(service);
-    }
-  }
+  // function service() {
+  //   count3++;
+  //   document.querySelector("#number3").innerHTML = count3;
+  //   if (count3 == 359) {
+  //     clearInterval(service);
+  //   }
+  // }
 
   return (
     <>
@@ -190,7 +190,7 @@ const Home = () => {
             </div>{" "}
             <img src={gplay} alt="#"></img>
             <div class="mobile-input p-1">
-              <label for="userMobile" class="sr-only">
+              {/* <label for="userMobile" class="sr-only">
                 Enter your mobile number
               </label>{" "}
               <input
@@ -199,16 +199,19 @@ const Home = () => {
                 type="tel"
                 name="user-mobile"
                 placeholder="Enter your mobile number"
-              />{" "}
-              <button id="join-btn-top" class="btn theme-btn fo-sm-16">
-                Get App Link
-              </button>
+              />{" "} */}
+              <Link to="/Subscribe">
+                {" "}
+                <button id="join-btn-top" class="btn theme-btn fo-sm-16">
+                  Subscribe
+                </button>
+              </Link>
             </div>
           </div>
 
           <div className="first-box-right">
             <div className="wrapper-main1">
-              <div className="carousel">
+              <div className="carousel-home">
                 <div className="carousel__item">
                   <div className="carousel__item-head">🚀</div>
                   <div className="carousel__item-body">
@@ -321,12 +324,12 @@ const Home = () => {
           </div>{" "}
           <div className="second-box-right">
             <div className="categories">
-              <div className="row1">
+              <div className="row-home">
                 <Box_component Icon={image28} Text={"Tax Planning"} />
                 <Box_component Icon={image26} Text={"Investment Planning"} />
                 <Box_component Icon={image29} Text={"Wealth Planning"} />
               </div>
-              <div className="row1">
+              <div className="row-home">
                 <Box_component Icon={image33} Text={"Retirement Planning"} />
                 <Box_component Icon={image31} Text={"Estate Planning"} />
                 <Box_component Icon={image27} Text={"Mutual Fund"} />
