@@ -9,7 +9,6 @@ import FacebookLogin from "react-facebook-login";
 
 const Register = (Profile) => {
   const [Mobile, setMobile] = useState("");
-  const [Name, setName] = useState("");
   const [Email, setEmail] = useState("");
   const [Password, setPassword] = useState("");
   const [ConfirmPassword, setConfirmPassword] = useState("");
@@ -17,13 +16,11 @@ const Register = (Profile) => {
   const responseFacebook = (response) => {
     console.log(response);
     setMobile(response.mobile);
-    setName(response.Name);
     setEmail(response.email);
     if (response.userID) {
       Profile.setProfile((prevState) => {
         return Object.assign({}, prevState, {
           id: response.id,
-          name:response.name,
           mobile: response.mobile,
           email: response.email,
           IsSignIn: true,
@@ -36,11 +33,6 @@ const Register = (Profile) => {
   const MobileValue = (event) => {
     event.preventDefault();
     setMobile(event.target.value);
-  };
-
-  const NameValue = (event) => {
-    event.preventDefault();
-    setName(event.target.value);
   };
 
   const EmailValue = (event) => {
@@ -66,7 +58,6 @@ const Register = (Profile) => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           email: Email,
-          name: Name,
           password: Password,
           mobile: Mobile,
         }),
@@ -78,7 +69,6 @@ const Register = (Profile) => {
             Profile.setProfile((prevState) => {
               return Object.assign({}, prevState, {
                 id: response.id,
-                name: response.name,
                 mobile: response.mobile,
                 email: response.email,
                 IsSignIn: true,
@@ -123,19 +113,6 @@ const Register = (Profile) => {
                     placeholder="Type Here"
                     required
                   ></input>
-                </div>
-                <div class="input-container">
-                  <label for="name">Name</label>
-
-                  <input
-                    onChange={NameValue}
-                    value={Name}
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    type="text"
-                    required
-                  />
                 </div>
                 <div class="input-container">
                   <label for="phone">Mobile No.</label>
