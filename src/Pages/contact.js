@@ -26,8 +26,10 @@ const [Description,setDescription] = useState("");
     })
       .then((response) => {
         if (response.ok) {
+          console.log("done");
           alert("We received your request. We will contact you shortly.")
         } else {
+          console.log(response);
           alert("Error. Something Went Wrong");
           // document.getElementById("logo").style.display = "none";
         }
