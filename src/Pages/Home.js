@@ -182,14 +182,14 @@ const Home = () => {
               The <span>smart </span>
               next gen <span> money app</span>
             </h3>
-            <img src={derivebox} alt="#"></img>
+            <img className="imagnhy" src={derivebox} alt="#"></img>
             <div className="s-box">
               <h4>
                 <h1>#DERIVEUP </h1> to begin saving 3X more than others!
               </h4>
             </div>{" "}
-            <img src={gplay} alt="#"></img>
-            <div class="mobile-input p-1">
+            <img className="imashid" src={gplay} alt="#"></img>
+            <div className="mobile-input p-1">
               {/* <label for="userMobile" class="sr-only">
                 Enter your mobile number
               </label>{" "}
@@ -202,7 +202,7 @@ const Home = () => {
               />{" "} */}
               <Link to="/Subscribe">
                 {" "}
-                <button id="join-btn-top" class="btn theme-btn fo-sm-16">
+                <button id="join-btn-top" className="btn theme-btn fo-sm-16">
                   Subscribe
                 </button>
               </Link>
@@ -325,14 +325,14 @@ const Home = () => {
           <div className="second-box-right">
             <div className="categories">
               <div className="row-home">
-                <Box_component Icon={image28} Text={"Tax Planning"} />
-                <Box_component Icon={image26} Text={"Investment Planning"} />
-                <Box_component Icon={image29} Text={"Wealth Planning"} />
+                <Box_component className="hajrybc" Icon={image28} Text={"Tax Planning"} />
+                <Box_component className="hajrybc" Icon={image26} Text={"Investment Planning"} />
+                <Box_component className="hajrybc" Icon={image29} Text={"Wealth Planning"} />
               </div>
               <div className="row-home">
-                <Box_component Icon={image33} Text={"Retirement Planning"} />
-                <Box_component Icon={image31} Text={"Estate Planning"} />
-                <Box_component Icon={image27} Text={"Mutual Fund"} />
+                <Box_component className="hajrybc" Icon={image33} Text={"Retirement Planning"} />
+                <Box_component className="hajrybc" Icon={image31} Text={"Estate Planning"} />
+                <Box_component className="hajrybc" Icon={image27} Text={"Mutual Fund"} />
               </div>
             </div>
           </div>
@@ -559,7 +559,7 @@ const Home = () => {
               <button className="dragger" onClick={() => setToggle(true)}>
                 <img alt="mover" className="lazyLoad isLoaded" src={arrow} />
               </button>{" "}
-              <img alt="Derive Capital" className="" src={happy} />
+              <img alt="Derive Capital" className="hapwdf" src={happy} />
             </div>
           </div>
         </section>
@@ -666,7 +666,7 @@ const Home = () => {
         <section className="eleventh-box">
           {/* <div className="site-register"> */}
           <h2 className="text-center3">Projects statistics</h2>
-          <div class="project-counter-wrp">
+          <div className="project-counter-wrp">
             <ul>
               <li>
                 <i className="fa fa-trophy fa-4x"></i>
