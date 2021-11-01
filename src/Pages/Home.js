@@ -1,3 +1,5 @@
+
+   
 import React, { useState } from "react";
 import "./CSS/Home.css";
 import { useHistory } from "react-router-dom";
@@ -98,7 +100,7 @@ const breakPoints3 = [
 const breakPoints2 = [
   { width: 400, itemsToShow: 1 },
   { width: 600, itemsToShow: 1 },
-  { width: 800, itemsToShow: 2 },
+  { width: 800, itemsToShow: 1},
   { width: 1000, itemsToShow: 3 },
   { width: 1200, itemsToShow: 3 },
   { width: 1400, itemsToShow: 3 },
@@ -185,7 +187,7 @@ const Home = () => {
             <img src={derivebox} alt="#"></img>
             <div className="s-box">
               <h4>
-                <h1>#DERIVEUP </h1> to begin saving 3X more than others!
+                <h1>#DERIVEUP </h1><span> to begin saving 3X more than others!</span>
               </h4>
             </div>{" "}
             <img src={gplay} alt="#"></img>
@@ -363,10 +365,10 @@ const Home = () => {
                     Top-ranking financial services guaranteed. Financial advice
                     to get you back where you belong. We handle your money with
                     high standards. Our business is to understand your business.
-                    It’s time to seek financial advice from experts. We
+                    {/* It’s time to seek financial advice from experts. We
                     guarantee the worthiness of every money transaction.
                     Creative financial solutions. Giving your savings the
-                    opportunity to grow.
+                    opportunity to grow. */}
                   </h3>{" "}
                   <Link to="" onClick={() => setAppointmentIsOpen(true)}>
                     Book Appointment
